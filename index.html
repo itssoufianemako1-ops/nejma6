@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سحب نجمة 6</title>
+    <style>
+        body {
+            font-family: Tahoma, Arial;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 420px;
+            background: white;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            line-height: 1.7;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            background: #ff5722;
+            color: white;
+            padding: 14px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #e94916;
+        }
+        #locker {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="mainBox">
+        <h1>🔶 سحب نجمة 6 🔶</h1>
+        <p>شارك دابا فالسحب الأسبوعي على عرض <strong>نجمة 6</strong>.  
+        دخل الإسم ديالك واضغط "بدء المشاركة".</p>
+
+        <input id="username" type="text" placeholder="دخل الإسم ديالك هنا">
+
+        <div class="btn" id="startBtn">بدء المشاركة</div>
+    </div>
+
+    <div id="locker"></div>
+
+    <script>
+        document.getElementById("startBtn").addEventListener("click", function () {
+            let name = document.getElementById("username").value.trim();
+
+            if (name === "") {
+                alert("عفاك دخل الإسم ديالك قبل ما تكمل.");
+                return;
+            }
+
+            // هنا غادي نبدلو الواجهة ونظهر الـ content locker
+            document.getElementById("mainBox").style.display = "none";
+
+            document.getElementById("locker").innerHTML = `
+                <iframe src="https://lockedapp.org/cl/i/xp6qo1?user=${encodeURIComponent(name)}"
+                style="width:100%; height:720px; border:none; border-radius:10px;"></iframe>
+            `;
+        });
+    </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سحب نجمة 6</title>
+    <style>
+        body {
+            font-family: Tahoma, Arial;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 420px;
+            background: white;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            line-height: 1.7;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            background: #ff5722;
+            color: white;
+            padding: 14px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #e94916;
+        }
+        #locker {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="mainBox">
+        <h1>🔶 سحب نجمة 6 🔶</h1>
+        <p>شارك دابا فالسحب الأسبوعي على عرض <strong>نجمة 6</strong>.  
+        دخل الإسم ديالك واضغط "بدء المشاركة".</p>
+
+        <input id="username" type="text" placeholder="دخل الإسم ديالك هنا">
+
+        <div class="btn" id="startBtn">بدء المشاركة</div>
+    </div>
+
+    <div id="locker"></div>
+
+    <script>
+        document.getElementById("startBtn").addEventListener("click", function () {
+            let name = document.getElementById("username").value.trim();
+
+            if (name === "") {
+                alert("عفاك دخل الإسم ديالك قبل ما تكمل.");
+                return;
+            }
+
+            // هنا غادي نبدلو الواجهة ونظهر الـ content locker
+            document.getElementById("mainBox").style.display = "none";
+
+            document.getElementById("locker").innerHTML = `
+                <iframe src="https://lockedapp.org/cl/i/xp6qo1?user=${encodeURIComponent(name)}"
+                style="width:100%; height:720px; border:none; border-radius:10px;"></iframe>
+            `;
+        });
+    </script>
+
+</body>
+</html>
